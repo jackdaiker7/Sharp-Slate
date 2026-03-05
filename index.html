@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharp Slate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Sharp Slate</h1>
+    <div class="subtitle" id="header-sport">DraftKings Optimizer</div>
+  </div>
+  <div class="header-right">
+    <div class="tournament-name" id="header-tournament"></div>
+    <div class="tournament-date" id="header-date"></div>
+  </div>
+</header>
+
+<main>
+  <div id="loading">Loading player data...</div>
+
+  <section id="lineup-section">
+    <div class="section-title">Optimal Lineup</div>
+    <div class="lineup-meta">
+      <div class="lineup-stat">
+        Total Salary
+        <span id="lineup-salary">—</span>
+      </div>
+      <div class="lineup-stat">
+        Projected Points
+        <span id="lineup-pts">—</span>
+      </div>
+    </div>
+    <div class="lineup-grid" id="lineup-grid"></div>
+  </section>
+
+  <section id="pool-section">
+    <div class="section-title">Full Player Pool</div>
+    <div class="table-controls">
+      <input type="text" id="search" placeholder="Search player..." />
+      <div class="table-legend">
+        <span class="check-icon" style="width:16px;height:16px;font-size:0.55rem;">&#10003;</span>
+        In optimal lineup
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th data-col="name">Player <span class="sort-icon">▼</span></th>
+            <th data-col="opponent">Opponent <span class="sort-icon">▼</span></th>
+            <th data-col="projectedPoints">Proj Pts <span class="sort-icon">▼</span></th>
+            <th data-col="salary">Salary <span class="sort-icon">▼</span></th>
+            <th data-col="optimal">Optimal <span class="sort-icon">▼</span></th>
+          </tr>
+        </thead>
+        <tbody id="player-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
