@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sharp Slate</title>
+  <title>UFC — Sharp Slate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
-<body>
+<body data-sport="ufc">
 
 <header>
   <div class="header-left">
     <h1><a href="index.html" class="header-link">Sharp Slate</a></h1>
-    <div class="subtitle" id="header-sport">DraftKings Optimizer</div>
+    <div class="subtitle" id="header-sport">UFC — DraftKings Optimizer</div>
   </div>
   <div class="header-right">
     <div class="tournament-name" id="header-tournament"></div>
@@ -23,13 +23,13 @@
 </header>
 
 <nav class="site-nav">
-  <a href="index.html" class="active">Tennis</a>
-  <a href="ufc.html">UFC</a>
+  <a href="index.html">Tennis</a>
+  <a href="ufc.html" class="active">UFC</a>
   <a href="about.html">About</a>
 </nav>
 
 <main>
-  <div id="loading">Loading player data...</div>
+  <div id="loading">Loading fighter data...</div>
 
   <section id="lineup-section">
     <div class="section-title">Optimal Lineup</div>
@@ -47,9 +47,9 @@
   </section>
 
   <section id="pool-section">
-    <div class="section-title">Full Player Pool</div>
+    <div class="section-title">Full Fighter Pool</div>
     <div class="table-controls">
-      <input type="text" id="search" placeholder="Search player..." />
+      <input type="text" id="search" placeholder="Search fighter..." />
       <div class="table-legend">
         <span class="check-icon" style="width:16px;height:16px;font-size:0.55rem;">&#10003;</span>
         In optimal lineup
@@ -59,7 +59,7 @@
       <table>
         <thead>
           <tr>
-            <th data-col="name">Player <span class="sort-icon">▼</span></th>
+            <th data-col="name">Fighter <span class="sort-icon">▼</span></th>
             <th data-col="opponent">Opponent <span class="sort-icon">▼</span></th>
             <th data-col="projectedPoints">Proj Pts <span class="sort-icon">▼</span></th>
             <th data-col="salary">Salary <span class="sort-icon">▼</span></th>
@@ -72,6 +72,10 @@
   </section>
 </main>
 
+<script>
+  const CSV_PATH = 'data/ufc-players.csv';
+  const CONFIG_PATH = 'data/ufc-config.json';
+</script>
 <script src="app.js"></script>
 </body>
 </html>

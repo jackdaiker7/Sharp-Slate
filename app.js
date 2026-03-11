@@ -1,5 +1,6 @@
-const CSV_PATH = 'data/players.csv';
-const CONFIG_PATH = 'data/config.json';
+// CSV_PATH and CONFIG_PATH can be overridden by the page before this script loads
+if (typeof CSV_PATH === 'undefined') var CSV_PATH = 'data/players.csv';
+if (typeof CONFIG_PATH === 'undefined') var CONFIG_PATH = 'data/config.json';
 
 let allPlayers = [];
 let sortCol = 'projectedPoints';
@@ -114,11 +115,7 @@ function renderTable(players) {
   document.querySelectorAll('thead th[data-col]').forEach(th => {
     th.classList.toggle('sorted', th.dataset.col === sortCol);
     const icon = th.querySelector('.sort-icon');
-    if (th.dataset.col === sortCol) {
-      icon.textContent = sortAsc ? '▲' : '▼';
-    } else {
-      icon.textContent = '▼';
-    }
+    icon.textContent = (th.dataset.col === sortCol && sortAsc) ? '▲' : '▼';
   });
 }
 

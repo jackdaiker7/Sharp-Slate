@@ -360,3 +360,60 @@ tbody td { padding: 0.75rem 1rem; }
   .about-grid { grid-template-columns: 1fr; }
   .about-hero h2 { font-size: 1.35rem; }
 }
+
+/* ── UFC theme overrides ── */
+[data-sport="ufc"] {
+  --purple: #1c1c1e;
+  --purple-mid: #3a3a3c;
+  --purple-light: #f5f5f5;
+  --accent: #C9A84C;
+  --border: #e0e0e0;
+  --optimal-bg: #fdf8ec;
+  background: #f0f0f0;
+}
+
+[data-sport="ufc"] header {
+  background: #1c1c1e;
+}
+
+[data-sport="ufc"] .player-card::before {
+  background: #C9A84C;
+}
+
+[data-sport="ufc"] .player-card .card-name {
+  color: #1c1c1e;
+}
+
+[data-sport="ufc"] .section-title {
+  color: #1c1c1e;
+  border-bottom-color: #C9A84C;
+}
+
+[data-sport="ufc"] .lineup-stat {
+  background: #1c1c1e;
+}
+
+[data-sport="ufc"] .check-icon {
+  background: #C9A84C;
+}
+
+[data-sport="ufc"] thead tr {
+  background: #1c1c1e;
+}
+
+[data-sport="ufc"] thead th:hover {
+  background: #3a3a3c;
+}
+
+[data-sport="ufc"] .site-nav a.active {
+  color: #1c1c1e;
+  border-bottom-color: #C9A84C;
+}
+
+[data-sport="ufc"] .site-nav a:hover {
+  color: #1c1c1e;
+}
+
+[data-sport="ufc"] tbody tr.is-optimal:hover {
+  background: #f5edd6;
+}
