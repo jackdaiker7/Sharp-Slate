@@ -1,6 +1,6 @@
 // CSV_PATH and CONFIG_PATH can be overridden by the page before this script loads
-if (typeof CSV_PATH === 'undefined') var CSV_PATH = 'data/players.csv';
-if (typeof CONFIG_PATH === 'undefined') var CONFIG_PATH = 'data/config.json';
+const CSV_PATH = window.CSV_PATH || 'data/players.csv';
+const CONFIG_PATH = window.CONFIG_PATH || 'data/config.json';
 
 let allPlayers = [];
 let sortCol = 'projectedPoints';
