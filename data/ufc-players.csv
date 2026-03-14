@@ -1,17 +1,27 @@
-Player,Pairing,Number,Projected Points,Salary,Optimal
-Oliveira,1,1,58.3,10800,1
-Chandler,1,2,38.2,8200,0
-Poirier,2,3,55.1,10400,1
-Gaethje,2,4,40.3,8000,0
-Adesanya,3,5,54.7,10200,1
-Pereira,3,6,41.2,7800,0
-Volkanovski,4,7,53.9,9900,1
-Topuria,4,8,42.5,7600,0
-Makhachev,5,9,57.2,9700,1
-Tsarukyan,5,10,38.8,7400,0
-O'Malley,6,11,52.4,9500,1
-Almeida,6,12,39.1,7200,0
-Pantoja,7,13,51.8,9300,0
-Moreno,7,14,43.2,7000,0
-Strickland,8,15,50.9,9100,0
-Du Plessis,8,16,44.7,6800,0
+﻿Fighter,Pairing,Projected Points,Salary,Optimal?
+Kape,1,85.6,9200,1
+Royval,1,54.5,7000,1
+Vallejos,2,73.5,9100,0
+Chikadze,2,41.7,7100,0
+Oleksiejczuk,3,71.8,8700,0
+Almeida,3,45,7500,0
+Costa,4,59.6,8200,0
+Charriere,4,54.7,8000,0
+Nzechukwu,5,59.3,8400,0
+Buchecha,5,58.1,7800,0
+Green,6,65.5,9000,0
+Gibson Jr.,6,50.8,7200,1
+Robertson,7,0,8800,0
+Lemos,7,0,7400,0
+Brito,8,72,9000,0
+Thomson,8,44.2,7200,0
+Amosov,9,79.3,9400,1
+Magny,9,36.5,6800,0
+Asplund,10,73.8,8900,1
+Sharaf,10,43.2,7300,0
+Santos,11,59.2,8500,0
+Croden,11,55,7700,0
+Pat,12,68,8600,0
+Frye Jr.,12,49.3,7600,0
+Bleda,13,65.6,8300,1
+Horth,13,48.1,7900,0
